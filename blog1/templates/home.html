@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Bosh Sahifa{% endblock title %}
+{%block content%}
+    <br>
+    <div class="jumbotron">
+        <h1 class="display-4">Assalomu alaykum!</h1>
+        <p class="lead">Yangiliklar blog saytiga Xush kelibsiz</p>
+        <hr class="my-4">
+        <p>Bu yerda siz qiziqarli maqolalardan o'qib maroq olasiz</p>
+        <p class="lead">
+            <a href="{% url 'article_list' %}" role="button">Postlarni ko'rish</a>
+        </p>
+    </div>
+    <!-- user saytga kirgan yoki kirmaganini tekshiradi
+    {% if user.is_authenticated %}
+        {{user.username.upper}} {{user.last_name.upper}}!
+        <p><a href="{% url 'logout' %}">Chiqib ketish</a></p>
+    {%else%}
+        <p>Saytga kirmagansiz</p>
+        <a href="{% url 'login' %}">Kirish</a> |
+        <a href="{% url 'signup' %}">Ro'yhatdan o'tish</a>
+    {%endif%} -->
+{%endblock%}
